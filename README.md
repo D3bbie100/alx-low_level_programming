@@ -1,1 +1,1 @@
-This repository contains low level programming projects using c
+This directory contain projects on C programming language
