@@ -8,23 +8,20 @@
 int main(void)
 {
 	int i;
-	char s[10] = "Fizz";
-	char st[10] = "Buzz";
-	char str[10] = "FizzBuzz";
 
 	for (i = 1; i <= 100; i++)
 	{
 		if ((i % 3 == 0) && (i % 5 != 0))
 		{
-			printf("%s", s);
+			printf("Fizz");
 		}
 		else if ((i % 5 == 0) && (i % 3 != 0))
 		{
-			printf("%s", st);
+			printf("Buzz");
 		}
 		else if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("%s", str);
+			printf("FizzBuzz");
 		}
 		else
 		{
