@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * _puts - prints a string
+ * @str: string to be printed
+ * Return: Always 0
+ */
+
+void _puts(char *str)
+{
+	int i;
+	int m;
+
+	m = _strlen(str)
+	for (i = 0; i <= m; i++)
+	{
+		_putchar(str[i]);
+	}
+}
