@@ -3,8 +3,7 @@
 /**
  * _strlen - returns the length of a string
  * @s: string whose length is to be returned
- * *s: pointer to dtring s
- * return: length of string
+ * Return: i (length of string)
  */
 
 int _strlen(char *s)
