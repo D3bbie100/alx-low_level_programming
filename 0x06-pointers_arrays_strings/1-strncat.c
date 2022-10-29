@@ -9,13 +9,14 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j, m, l;
+	int i, j, m, l, p;
 
 	i = 0;
 	while (dest[i] != '\0')
 	{
 		i++;
 	}
+	p = i;
 	j = 0;
 	while (src[j] != '\0')
 	{
@@ -23,13 +24,20 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	l = j + 1;
 	m = n - 1;
-	for (j = 0; j <= m; ++j, ++i)
-	{
-		dest[i] = src[j];
+	if (n <= l)
+	{	
+		for (j = 0; j <= m; ++j, ++i)
+		{
+			dest[i] = src[j];
+		}
 	}
-	if (l <= n)
+	else
 	{
-		dest[i] = '\0';
+		for (j = 0; src[j] != '\0'; ++j, ++p)
+		{
+			dest[p] = src[j];
+		}
+		dest[p] = '\0';
 	}
 	return (dest);
 }
