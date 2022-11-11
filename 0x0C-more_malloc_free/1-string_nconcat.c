@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * string_nconcat - cocatenates 2 strings
  * @s1: string to be added onto by s2
@@ -9,7 +8,6 @@
  * @n: number of elements of s2 to be added onto s1
  * Return: Pointer
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
@@ -33,6 +31,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s[i] = s1[i];
 		i++;
+	}
+	if (n > sizeof(s2))
+	{
+		n = sizeof(s2) + 1;
 	}
 	for (j = 0; j < n; j++, i++)
 	{
