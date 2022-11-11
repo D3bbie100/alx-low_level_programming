@@ -10,6 +10,12 @@ int _atoi(char *s)
 	int res = 0;
 	int sign = 1;
 	int i;
+	
+	if (*s == '-')
+	{
+		sign = -1;
+		i++;
+	}
 
 	for (i = 0; str[i] != '\0'; ++1)
 	{
